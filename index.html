@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./googleb82884a905252653.html">
+    <link rel="stylesheet" href="./googleb82884a905252653.html">
     <link rel="shortcut icon" href="./id-card.png" type="image/x-icon">
     <title>Business information card</title>
     <style>
@@ -27,7 +27,8 @@
             opacity: 0;
             animation: modernFadeIn 1.5s ease-in-out forwards;
             height: 100%;
-            overflow-y: auto; /* فعال کردن اسکرول عمودی */
+            overflow-y: auto;
+            /* فعال کردن اسکرول عمودی */
         }
 
         @keyframes modernFadeIn {
@@ -64,14 +65,14 @@
 
         .profile-img {
 
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: url('./my4.png') no-repeat center center;
-    background-size: cover;
-    margin: 0 auto 25px;
-    box-shadow: inset 8px 8px 16px #0a0a0a, inset -8px -8px 16px #2e2e2e;
-}
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: url('./my4.png') no-repeat center center;
+            background-size: cover;
+            margin: 0 auto 25px;
+            box-shadow: inset 8px 8px 16px #0a0a0a, inset -8px -8px 16px #2e2e2e;
+        }
 
 
         h2 {
@@ -86,7 +87,7 @@
             margin-top: 15px;
             background-color: #171717;
             border-radius: 20px;
-            
+
         }
 
         .languages {
@@ -167,10 +168,237 @@
         </div>
         <div class="social-icons">
             <a href="https://wa.me/989139246091"><img src="./whatsapp.png" alt="WhatsApp"></a>
-            <a href="https://www.instagram.com/mohammadjavad.xp?igsh=M3AxNDJmN2I3aXlo&utm_source=qr"><img src="./instagram.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/mohammadjavad.xp?igsh=M3AxNDJmN2I3aXlo&utm_source=qr"><img
+                    src="./instagram.png" alt="Instagram"></a>
             <a href="https://t.me/WhiteX2_AI"><img src="./telegram.png" alt="Telegram"></a>
         </div>
     </div>
+</body>
+
+</html>
+<!-- ---------------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="محمد جواد جونبخش - توسعه‌دهنده وب با تخصص در C#, JS, HTML, CSS, PHP و WordPress">
+    <meta name="keywords"
+        content="محمد جواد جونبخش, توسعه‌دهنده وب, برنامه‌نویس, طراحی سایت, HTML, CSS, JavaScript, PHP, WordPress">
+    <meta name="author" content="محمد جواد جونبخش">
+    <link rel="stylesheet" href="./googleb82884a905252653.html">
+    <link rel="shortcut icon" href="./id-card.png" type="image/x-icon">
+    <title>Business information card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #121212;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            overflow-y: auto;
+        }
+
+        /* بخش مقالات */
+        .article-section {
+            margin-top: 40px;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 20px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            width: 500px;
+            margin: 50px auto;
+        }
+
+        .article-section h2 {
+            color: #00bcd4;
+        }
+
+        /* تنظیمات برای تصاویر */
+        .uploaded-image {
+            width: 100%;
+            /* عرض تصویر را 100 درصد فضای موجود تنظیم می‌کند */
+            height: 100%;
+            /* ارتفاع تصویر را 100 درصد فضای موجود تنظیم می‌کند */
+            object-fit: contain;
+            /* تصویر در فضای اسلاید جا می‌شود بدون بریدگی */
+            border-radius: 10px;
+        }
+
+        /* تنظیمات کانتینر مقالات */
+        .article-container {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            /* ارتفاع به اندازه مناسب برای جا دادن تصاویر */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* تنظیمات اسلایدها */
+        .article-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* ارتفاع به اندازه مناسب برای جا دادن تصاویر */
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .article-slide.active {
+            opacity: 1;
+        }
+
+        /* دکمه‌های دایره‌ای */
+        .dots-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #bbb;
+            transition: background-color 0.3s;
+        }
+
+        .dot.active {
+            background-color: #00bcd4;
+        }
+
+        /* دکمه‌های قبلی و بعدی */
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .navigation-buttons button {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation-buttons button:hover {
+            background-color: #007c91;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- اطلاعات کارت شما بدون تغییر باقی می‌ماند -->
+
+    <!-- بخش مقالات (در بخش جداگانه پایین سایت) -->
+    <section class="article-section">
+        <h2>مقالات</h2>
+        <div class="article-container">
+            <div class="article-slide active">
+                <h3>زندگی سریع میگذرد</h3>
+                <p>‌- زندگے در گذر است و آدمے رهگذر!</p>
+                <img class="uploaded-image" src="./IMG_0414.JPG" alt="تصویر مقاله 1">
+            </div>
+            <div class="article-slide">
+                <h3>بازم عید شد و...</h3>
+                <p>‌
+                    به قول جناب حافظ:
+                    نو بهار است
+                    در آن کوش که خوش‌دل باشی.
+
+                </p>
+                <img class="uploaded-image" src="./my1.png" alt="تصویر مقاله 2">
+            </div>
+            <div class="article-slide">
+                <h3>میگه که...</h3>
+                <p>هیچ زیبایی روشن تر از یک دل مهربان نمی درخشد .</p>
+                <img class="uploaded-image" src="./my11.png" alt="تصویر مقاله 3">
+            </div>
+            <div class="article-slide">
+                <h3>گمنامی مثل...</h3>
+                <p>زندگـے آب روانـے استـ، روان مـےگذرد
+                    هر چـہ تقدیر من و توستـ، همانـ مـے گذرد 
+                    
+                    #گـمـنـامــ♬</p>
+                <img class="uploaded-image" src="./my3.png" alt="تصویر مقاله 4">
+            </div>
+            <div class="article-slide">
+                <h3>سخنی با رَب</h3>
+               <p>یا رَب زِ جهان لطف تو کافیست مرا...</p>
+                <img class="uploaded-image" src="./MY.jpg" alt="تصویر مقاله 5">
+            </div>
+        </div>
+
+        <!-- دکمه‌های دایره‌ای -->
+        <div class="dots-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <!-- دکمه‌های قبلی و بعدی -->
+        <div class="navigation-buttons">
+            <button id="prevBtn">&lt;</button>
+            <button id="nextBtn">&gt;</button>
+        </div>
+    </section>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".article-slide");
+        const dots = document.querySelectorAll(".dot");
+
+        // برای نمایش اسلاید بعدی
+        function showNextSlide() {
+            slides[currentIndex].classList.remove("active");
+            dots[currentIndex].classList.remove("active");
+
+            currentIndex = (currentIndex + 1) % slides.length;
+
+            slides[currentIndex].classList.add("active");
+            dots[currentIndex].classList.add("active");
+        }
+
+        // برای نمایش اسلاید قبلی
+        function showPrevSlide() {
+            slides[currentIndex].classList.remove("active");
+            dots[currentIndex].classList.remove("active");
+
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+
+            slides[currentIndex].classList.add("active");
+            dots[currentIndex].classList.add("active");
+        }
+
+        // تغییر اسلاید به طور خودکار
+        setInterval(showNextSlide, 4500);
+
+        // دکمه‌های قبلی و بعدی
+        document.getElementById("prevBtn").addEventListener("click", showPrevSlide);
+        document.getElementById("nextBtn").addEventListener("click", showNextSlide);
+    </script>
 </body>
 
 </html>
